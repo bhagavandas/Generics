@@ -67,7 +67,8 @@ public class MaxNumber {
 		}
 		System.out.println();
 	}
-
+	
+	
 	public static void getMaxString() {
 		String name1 = new String("Apple");
 		String name2 = new String("Orange");
@@ -82,6 +83,8 @@ public class MaxNumber {
 		}
 		System.out.println();
 		
-	}	
-	
 }
+	
+	
+	}
+
