@@ -2,20 +2,26 @@ package com.bl.maxNum;
 
 public class MaxNum {
 	
-	static Integer xInt = new Integer("70");
+	static Integer xInt = new Integer("700");
 	static Integer yInt = new Integer("20");
 	static Integer zInt = new Integer("500");
 	static Integer max;
 	
-	static Float xF = new Float(120.5);
-	static Float yF = new Float(20.5);
-	static Float zF = new Float(5.5);
+	static Float xF = new Float(120.5f);
+	static Float yF = new Float(200.5f);
+	static Float zF = new Float(5.5f);
 	static Float max1;
+	
+	static String xStr = new String("Apple");
+	static String yStr = new String("PineApple");
+	static String zStr = new String("Banana");
+	static int max2;
 
 	
 	public static void main(String[] args) {
 		getMaxInt();
 		getMaxFloat();
+		getMaxString();
 	}
 
 	
@@ -59,5 +65,30 @@ public class MaxNum {
 		}
 		
 		}
+	
+	public static void getMaxString() {
+		String max2 = xStr;
+		
+		int res = (yStr).compareTo(max2);
+		int res1 = zStr.compareTo(max2);
+		int res2 = xStr.compareTo(max2);
+	
+		if (res > 0) {
+			max2 = yStr;
+			System.out.println("Maximum Float number is: " + max2);
+			
+		} else if (res1 > 0) {
+			max2 = zStr;
+			System.out.println("Maximum Float number is: " + max2);
+		}
+		
+		else  {
+			max2 = xStr;
+			System.out.println("Maximum Float number is: " + max2);
+		}
+		
+		}
+	
 }
+
 
