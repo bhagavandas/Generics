@@ -4,6 +4,7 @@ public class MaxNumber {
 	public static void main(String[] args) {
 
 		getMaxNum();
+		getMaxFloatNum();
 		
 
 	}
@@ -52,6 +53,22 @@ public class MaxNumber {
 		System.out.println();
 	}
 
+	public static void getMaxFloatNum() {
+		Float num1 = new Float("10.5");
+		Float num2 = new Float("7.5");
+		Float num3 = new Float("12.5");
+
+		if (num1 >= num2 && num1 >= num3) {
+			System.out.println(num1 + " is the maximum Float number.");
+		} else if (num2 >= num1 && num2 >= num3) {
+			System.out.println(num2 + " is the maximum Float number.");
+		} else {
+			System.out.println(num3 + " is the maximum Float number.");
+		}
+		System.out.println();
+	}
+	
+	
 	
 }
 
