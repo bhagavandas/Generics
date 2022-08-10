@@ -58,12 +58,14 @@ public class MaxTest<T extends Comparable<T>> {
 		Integer xInt = 100, yInt = 200, zInt = 50;
 		Float xF = 10.5f, yF = 7.5f, zF = 12.5f;
 		String xStr = "Apple", yStr = "Orange", zStr = "PineApple";
+		Character xchar = 'z', ychar = 'b', zchar = 'c';
 
 		new MaxTest(xInt, yInt, zInt).maximum();
 		new MaxTest(xF, yF, zF).maximum();
 		new MaxTest(xStr, yStr, zStr).maximum();
+		new MaxTest<>(xchar, ychar, zchar).maximum();
 		
-		MaxTest.testMaximum(xStr, yStr, zStr);
+		//MaxTest.testMaximum(xStr, yStr, zStr);
 	}
 	
 
