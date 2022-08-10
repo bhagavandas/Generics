@@ -5,7 +5,7 @@ public class MaxNumber {
 
 		getMaxNum();
 		getMaxFloatNum();
-		
+		getMaxString();
 
 	}
 
@@ -67,8 +67,21 @@ public class MaxNumber {
 		}
 		System.out.println();
 	}
-	
-	
+
+	public static void getMaxString() {
+		String name1 = new String("Apple");
+		String name2 = new String("Orange");
+		String name3 = new String("PineApple");
+
+		if (name1.length() >= name2.length() && name1.length() >= name3.length()) {
+			System.out.println(name1 + " is the maximum String");
+		} else if (name2.length() >= name1.length() && name2.length() >= name3.length()) {
+			System.out.println(name2 + " is the maximum String");
+		} else {
+			System.out.println(name3 + " is the maximum String");
+		}
+		System.out.println();
+		
+	}	
 	
 }
-
