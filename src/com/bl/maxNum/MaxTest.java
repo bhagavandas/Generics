@@ -32,6 +32,20 @@ public class MaxTest<T extends Comparable<T>> {
 
 	}
 	
+	public static String testMaximum(String x, String y, String z) {
+		String max = x;
+		if(y.compareTo(max) > 0) {
+			max = y;
+		}
+		if(z.compareTo(max) > 0) {
+			max = z;
+	}
+		if(x.compareTo(max) > 0) {
+			max = x;
+	}
+		printMax(x, y, z, max);
+		return max;
+	}
 	
 	
 	public static <T> void printMax(T x, T y, T z, T max) {
@@ -49,7 +63,7 @@ public class MaxTest<T extends Comparable<T>> {
 		new MaxTest(xF, yF, zF).maximum();
 		new MaxTest(xStr, yStr, zStr).maximum();
 		
-		
+		MaxTest.testMaximum(xStr, yStr, zStr);
 	}
 	
 
